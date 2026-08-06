@@ -1,0 +1,5 @@
+mp.add_key_binding("a", function()
+    local v = mp.get_property_native("keepaspect-window")
+    mp.set_property_native("keepaspect-window", not v)
+    mp.osd_message("keepaspect-window: " .. tostring(not v))
+end)
